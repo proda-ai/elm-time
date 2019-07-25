@@ -1,5 +1,9 @@
 # Time
 
+# Elm 0.19 Time Api ported back to 0.18
+Used for reducing risk when updating 0.18 code bases
+
+
 To work with time successfully in programming, we need three different concepts:
 
 - **Human Time** &mdash; This is what you see on clocks (8am) or on calendars (May 3rd). Great! But if my phone call is at 8am in Boston, what time is it for my friend in Vancouver? If it is at 8am in Tokyo, is that even the same day in New York? (No!) So between [time zones][tz] based on ever-changing political boundaries and inconsistent use of [daylight saving time][dst], human time should basically never be stored in your `Model` or database! It is only for display!
