@@ -1,6 +1,6 @@
 {
     "version": "1.0.0",
-    "summary": "helpful summary of your project, less than 80 characters",
+    "summary": "Elm 0.19 Time Api library for elm 0.18",
     "repository": "https://github.com/proda-ai/elm-time.git",
     "license": "BSD3",
     "source-directories": [

@@ -51,6 +51,8 @@ import Task exposing (Task)
 -- COMPAT
 
 
+{-| Elm 0.19 introduces modBy
+-}
 modBy : Int -> Int -> Int
 modBy a b =
     b % a
