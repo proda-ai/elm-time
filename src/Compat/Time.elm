@@ -39,7 +39,7 @@ import Basics exposing (..)
 import Dict
 import List exposing ((::))
 import Maybe exposing (Maybe(..))
-import Native.Time
+import Native.Compat.Time
 import Platform
 import Platform.Sub exposing (Sub)
 import Process
@@ -77,7 +77,7 @@ type Posix
 -}
 now : Task x Posix
 now =
-    Native.Time.now millisToPosix
+    Native.Compat.Time.now millisToPosix
 
 
 {-| Turn a `Posix` time into the number of milliseconds since 1970 January 1
@@ -184,7 +184,7 @@ cannot do it myself unfortunately.
 -}
 here : Task x Zone
 here =
-    Native.Time.here ()
+    Native.Compat.Time.here ()
 
 
 
@@ -682,7 +682,7 @@ onSelfMsg router interval state =
 
 setInterval : Float -> Task Never () -> Task x Never
 setInterval =
-    Native.Time.setInterval
+    Native.Compat.Time.setInterval
 
 
 
@@ -725,7 +725,7 @@ IANA data you loaded yourself.
 -}
 getZoneName : Task x ZoneName
 getZoneName =
-    Native.Time.getZoneName ()
+    Native.Compat.Time.getZoneName ()
 
 
 {-| **Intended for package authors.**

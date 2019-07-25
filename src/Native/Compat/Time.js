@@ -7,7 +7,7 @@ _elm_lang$core$Native_Scheduler
 */
 
 
-var _proda_ai$elm_time$Native_Time = function() {
+var _proda_ai$elm_time$Native_Compat_Time = function() {
 
     function now(millisToPosix)
     {
